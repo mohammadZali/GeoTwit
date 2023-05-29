@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/my-style.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <img src="../static/img/SmartCity.png" alt="SmartCity" width="1110" height="800">
+    <div class="button-container">
+      <a href= "{% url 'map'%}" class="button">Go to Map</a>
+      <a href="{% url 'home'%}" class="button">Go to Social Media</a>
+    </div>
+  </div>
+{% endblock %}
